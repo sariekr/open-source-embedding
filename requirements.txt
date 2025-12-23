@@ -1,0 +1,46 @@
+# Core dependencies
+python-dotenv==1.0.0
+numpy>=1.26.0
+scikit-learn>=1.3.0
+
+# Vector database
+qdrant-client>=1.7.0
+
+# Embedding models
+sentence-transformers>=2.5.0
+transformers>=4.40.0
+torch>=2.2.0  # Mac M4 için uygun versiyon
+
+# HuggingFace models
+huggingface-hub>=0.22.0
+tokenizers>=0.19.0
+safetensors>=0.4.0
+
+# Quantization support (7B model için)
+# bitsandbytes  # Mac M4'te çalışmıyor, optional
+accelerate>=0.28.0
+
+# RAGAS evaluation framework
+# Version pinned for stability - RAGAS 0.3.x has breaking changes
+ragas>=0.1.0,<0.4.0
+datasets>=2.16.0,<3.0.0
+langchain>=0.1.0,<0.3.0
+langchain-core>=0.1.0,<0.3.0
+langchain-openai>=0.1.0,<0.2.0
+
+# Progress bars and utilities
+tqdm==4.66.1
+
+# Optional: For specific models
+# jina-embeddings-v3 için
+# trust-remote-code flag gerektirir, ek paket gerektirmez
+
+# API clients (eğer API-based modelleri de test edecekseniz)
+# openai==1.7.2
+# cohere==5.0.0
+# voyageai==0.3.0
+# mistralai==0.0.11
+
+# Development & debugging
+ipython==8.18.1
+jupyter==1.0.0
